@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Instructions Section -->
+<div id="instruction-container">
+  <h1>Welcome to the Quiz!</h1>
+  <h2>Quiz Instructions</h2>
+  <ul>
+    <li>Total Questions: There are 10 questions in this quiz.</li>
+    <li>Marking Scheme:</li>
+    <ul>
+      <li>Correct Answer: +2 marks</li>
+      <li>Incorrect Answer: -1 mark</li>
+    </ul>
+    <li>Instructions for Answering:</li>
+    <ul>
+      <li>Read each question carefully.</li>
+      <li>Choose the option you believe is correct.</li>
+      <li>All questions are compulsory.</li>
+    </ul>
+    <li>End of Quiz: Once you complete all 10 questions, your score will be displayed.</li>
+    <li>Marks Required to Pass: You need at least 7 out of 20 to pass.</li>
+  </ul>
+</div>
+
+
+    <!-- Quiz Section -->
+    <div id="question-container">
+      <div class="top-bar">
+        <h2 id="timer">Time Left: 10:00</h2>
+      </div>
+      <h1 id="question">Question</h1>
+      <div class="options">
+        <button class="option">Option 1</button>
+        <button class="option">Option 2</button>
+        <button class="option">Option 3</button>
+        <button class="option">Option 4</button>
+      </div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result-container">
+      <h1 id="result">Marks: </h1>
+      <h2 id="status"></h2>
+    </div>
+
+    <!-- Start / Next Button -->
+    <button id="startBtn">Start</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
